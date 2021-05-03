@@ -1,49 +1,33 @@
 import Head from 'next/head'
 
+// npm run dev
+
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>SuperVet</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="http://localhost:3000/">SuperVet</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Make an appointment now! <a href="http://localhost:3000/signin"> Sign in</a> or <a href="http://localhost:3000/register"> Register</a>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="http://localhost:3000/guide" className="card">
+            <h3>User Guide &rarr;</h3>
+            <p>Find in-depth information about using SuperVet and its features.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="http://localhost:3000/contact" className="card">
+            <h3>Contact &rarr;</h3>
+            <p>You can find our personal contact information here.</p>
           </a>
         </div>
       </main>
@@ -54,8 +38,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Created by Group #5
         </a>
       </footer>
 
@@ -127,6 +110,11 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+        
+        .description a {
+          color: #0070f3;
+          text-decoration: none;
         }
 
         code {
