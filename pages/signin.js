@@ -43,11 +43,13 @@ export default function signin() {
 
                 <div className="grid">
                     <a className="card" style={{minWidth: '480px'}}>
-                        <h3>Sign In:</h3>
-                        <Box style={{marginTop: '48px', alignItems: "center", justifyContent: "center"}}>
-                            <p>Username: <MaterialTextField/></p>
-                            <p>Password: <MaterialTextField/></p>
-                            <p><MaterialButton/></p>
+                        <h3>SIGN IN</h3>
+                        <Box style={{marginTop: '36px', justifyContent: "center", alignItems: "center"}}>
+                            <Box style={{marginLeft: '128px'}}><p><a>Username: </a><MaterialTextField/></p></Box>
+                            <Box style={{marginTop: '24px', marginLeft: '128px'}}><p>
+                                <a>Password: </a><MaterialTextField/></p></Box>
+                            <Box style={{marginTop: '24px', marginLeft: '172px'}}><p><MaterialButton/></p></Box>
+                            <Box style={{marginTop: '24px'}}>Don't have an account? <a href={'http://localhost:3000/register'} style={{color:'orange'}}> Register here</a> </Box>
                         </Box>
                     </a>
                 </div>
@@ -164,13 +166,15 @@ export default function signin() {
                 text-align: left;
                 color: inherit;
                 align-items: center;
+                justify-items: center;
                 text-decoration: none;
                 border: 1px solid #eaeaea;
                 border-radius: 10px;
                 transition: color 0.15s ease, border-color 0.15s ease;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+                background-color: rgba(0, 112, 243, 0.2);
               }
-              
+
 
               .card h3 {
                 margin: 0 0 1rem 0;
@@ -179,8 +183,9 @@ export default function signin() {
 
               .card p {
                 margin: 0;
-                font-size: 1.3rem;
-                line-height: 1.3;
+                font-size: 1.1rem;
+                line-height: 1.1;
+                align-items: center;
               }
 
               .logo {

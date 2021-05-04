@@ -4,7 +4,7 @@ import {styled} from "@material-ui/core/styles";
 
 const MaterialTextField = styled(TextField)({
     background: 'white',
-    borderRadius: '0.25rem',
+    borderRadius: '0.5rem',
     border: '1px solid',
     borderColor: 'lightgray',
     minHeight: '24px',
