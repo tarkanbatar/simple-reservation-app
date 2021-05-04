@@ -6,7 +6,7 @@ import {Grid, Row, Col} from 'react-bootstrap'
 import MContentBox from "../components/contentbox";
 import {Box} from "@material-ui/core";
 
-export default function signin() {
+export default function register () {
     function Form() {
         const registerUser = async event => {
             event.preventDefault()
@@ -33,7 +33,7 @@ export default function signin() {
 
         <div className="container">
             <Head>
-                <title>Sign In</title>
+                <title>Register</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
@@ -43,13 +43,14 @@ export default function signin() {
 
                 <div className="grid">
                     <a className="card" style={{minWidth: '480px'}}>
-                        <h3>SIGN IN</h3>
+                        <h3>REGISTER</h3>
                         <Box style={{marginTop: '36px', justifyContent: "center", alignItems: "center"}}>
                             <Box style={{marginLeft: '128px'}}><p><a>Username: </a><MaterialTextField/></p></Box>
                             <Box style={{marginTop: '24px', marginLeft: '128px'}}><p>
                                 <a>Password: </a><MaterialTextField/></p></Box>
+                            <Box style={{marginTop: '24px', marginLeft: '128px'}}><p>
+                                <a>Confirm Password: </a><MaterialTextField/></p></Box>
                             <Box style={{marginTop: '24px', marginLeft: '172px'}}><p><MaterialButton/></p></Box>
-                            <Box style={{marginTop: '24px'}}>Don't have an account? <a href={'http://localhost:3000/register'} style={{color:'orange'}}> Register here</a> </Box>
                         </Box>
                     </a>
                 </div>
