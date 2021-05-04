@@ -3,7 +3,6 @@ import React from 'react'
 import MaterialButton from '../components/button'
 import MaterialTextField from "../components/textfield";
 import {Grid, Row, Col} from 'react-bootstrap'
-import MContentBox from "../components/contentbox";
 import {Box} from "@material-ui/core";
 
 export default function register () {
