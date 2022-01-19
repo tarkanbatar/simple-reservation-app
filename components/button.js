@@ -9,7 +9,7 @@ const MaterialButton = styled(Button)({
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     color: 'white',
     maxHeight: '24px',
-    padding: '16px',
+    padding: '15px',
 });
 
 export default function MButton() {
